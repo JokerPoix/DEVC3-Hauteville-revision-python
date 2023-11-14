@@ -29,3 +29,17 @@ def evaluate_expression(expr):
                     return "Division par zéro impossible"
         else:
             i += 1
+            
+    result = float(elements[0])
+    i = 1
+    while i < len(elements):
+        operator = elements[i]
+        operand = float(elements[i + 1])
+
+        if operator == '+':
+            result += operand
+        else:
+            result -= operand
+        i += 2
+
+    return result
