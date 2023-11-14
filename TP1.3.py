@@ -4,12 +4,13 @@ def evaluate_expression(expr):
     for char in expr:
         if char.isdigit():
             current_number += char
-        else:
+        elif char in ('+', '-', '*', '/'):
             if current_number:
                 elements.append(current_number)
                 current_number = ''
-            if char != ' ':
-                elements.append(char)
+            elements.append(char)
+        elif char != ' ':
+            return f"Caractère non valide : '{char}'"
     if current_number:
         elements.append(current_number)
 
