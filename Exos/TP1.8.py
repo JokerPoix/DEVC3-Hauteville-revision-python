@@ -20,4 +20,9 @@ meilleurs_eleves = {eleve: notes for eleve, notes in notes_par_nom.items() if ma
 
 meilleurs_eleves_tries = dict(sorted(meilleurs_eleves.items(), key=lambda x: (-max(x[1]), x[0][0], x[0][1])))
 
+print("Dictionnaire trié par note :")
+for eleve, notes in sorted(notes_par_nom.items(), key=lambda x: (-max(x[1]), x[0][0], x[0][1])):
+    print(f"{eleve}: {notes}")
 
+print("\nMeilleur(s) élève(s) :")
+print(meilleurs_eleves_tries)
