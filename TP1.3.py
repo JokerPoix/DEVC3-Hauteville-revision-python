@@ -44,3 +44,9 @@ def evaluate_expression(expr):
         i += 2
 
     return result
+
+
+operation = input("Entrez une expression mathématique (ex. 11+48-69*5) : ")
+resultat = evaluate_expression(operation)
+print(f"Résultat : {resultat}")
+
