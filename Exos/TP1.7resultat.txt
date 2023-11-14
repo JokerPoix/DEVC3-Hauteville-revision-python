@@ -1,0 +1,1 @@
+Le nombre de mots dans le fichier texte est : 8
