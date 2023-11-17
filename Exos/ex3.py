@@ -16,6 +16,7 @@ def evaluate_expression(expr):
 
     i = 0
     while i < len(elements):
+        
         if elements[i] in ('*', '/'):
             operator = elements[i]
             left_operand = float(elements[i - 1])
